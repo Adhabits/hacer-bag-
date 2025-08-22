@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HackerX™ Backpack — ₹599 Today (MRP ₹999)</title>
-  <meta name="description" content="My preferred high‑converting single‑product layout: bold hero, swipe gallery, stacked benefits, sticky buy bar, reviews, and a clean popup order form with WhatsApp fallback.">
+  <meta name="description" content="High‑converting single‑product landing: bold hero, swipe gallery, sticky stacked benefits, sticky buy bar, reviews, and a clean popup order form with WhatsApp fallback.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
@@ -42,11 +42,12 @@
     .dots span{width:8px;height:8px;border-radius:999px;background:#2a3a58}
     .dots span.active{background:#8eb7ff}
 
-    /* Benefits (slim stack) */
+    /* Benefits — STICKY STACKED REVEAL */
     .stack{max-width:760px;margin:36px auto 0}
-    .step{position:relative}
+    .stage{height:70vh;position:relative}
+    .step{position:sticky;top:90px;transform:translateY(10px);opacity:.96;transition:transform .35s ease, box-shadow .35s ease, opacity .35s}
+    .step.in{transform:translateY(0);box-shadow:0 24px 60px rgba(2,6,23,.35);opacity:1}
     .cardThin{padding:16px;border:1px solid var(--line);border-radius:16px;background:#0b182d}
-    .step:not(:first-child){margin-top:-70px}
 
     /* Specs */
     .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
@@ -70,7 +71,14 @@
     .modal input,.modal textarea,.modal select{padding:12px;border-radius:12px;border:1px solid var(--line);background:#071225;color:var(--ink)}
     .modal .full{grid-column:1/-1}
 
-    @media (max-width:980px){.hero{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.rail img{flex-basis:92%}.hcopy h1{font-size:32px}}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .rail img{flex-basis:92%}
+      .hcopy h1{font-size:32px}
+      .stage{height:60vh}
+      .step{top:72px}
+    }
   </style>
 </head>
 <body>
@@ -106,12 +114,12 @@
     </div>
   </div>
 
-  <!-- WHY / BENEFITS (my signature slim stack) -->
+  <!-- WHY / BENEFITS (sticky stacked reveal) -->
   <div class="container" id="why">
     <div class="stack">
-      <div class="step" style="z-index:3"><div class="cardThin"><h3>2 Hidden Pockets</h3><p>Phone/keys/cash stay <strong>safe & discreet</strong> with concealed pockets.</p></div></div>
-      <div class="step" style="z-index:2"><div class="cardThin"><h3>Premium Front</h3><p><strong>Faux‑leather</strong> look with hacker circuit print for a standout style.</p></div></div>
-      <div class="step" style="z-index:1"><div class="cardThin"><h3>Built To Last</h3><p>Sturdy stitching, smooth zippers, and tough fabric built for everyday use.</p></div></div>
+      <div class="stage"><div class="step"><div class="cardThin"><h3>2 Hidden Pockets</h3><p>Phone/keys/cash stay <strong>safe & discreet</strong> with concealed pockets.</p></div></div></div>
+      <div class="stage"><div class="step"><div class="cardThin"><h3>Premium Front</h3><p><strong>Faux‑leather</strong> look with hacker circuit print for a standout style.</p></div></div></div>
+      <div class="stage"><div class="step"><div class="cardThin"><h3>Built To Last</h3><p>Sturdy stitching, smooth zippers, and tough fabric built for everyday use.</p></div></div></div>
     </div>
 
     <div class="grid2" style="margin-top:28px">
@@ -188,6 +196,13 @@
       const w=rail.clientWidth; const x=rail.scrollLeft; const i=Math.round(x/(w+12));
       dots.querySelectorAll('span').forEach((s,idx)=>s.classList.toggle('active',idx===i));
     });
+
+    // Sticky stacked reveal observer
+    const steps = document.querySelectorAll('.step');
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+    },{threshold:0.4});
+    steps.forEach(s=>io.observe(s));
 
     // Open/close order popup
     const modal=document.getElementById('orderModal');
