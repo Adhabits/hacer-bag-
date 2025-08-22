@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HackerX™ Backpack – Hidden Pockets | ₹599 Today (MRP ₹999)</title>
+  <meta name="description" content="HackerX Backpack with 2 hidden pockets, faux‑leather hacker design. Limited-time offer ₹599 (MRP ₹999). Free COD, fast shipping, secure checkout." />
+  <meta name="theme-color" content="#041209" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#050b0a;--panel:#0a1612;--line:#0f261e;--text:#e6fff4;--muted:#8de4c3;--brand:#18ff92;--accent:#00ffd5;--danger:#ff3b3b;--shadow:0 12px 32px rgba(0,0,0,.5);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:
+      radial-gradient(1000px 500px at 15% -10%,rgba(0,255,213,.06),transparent),
+      radial-gradient(800px 400px at 90% 0,rgba(24,255,146,.06),transparent),
+      var(--bg);
+      color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+
+    /* Hacker header */
+    header{position:sticky;top:0;z-index:40;background:linear-gradient(0deg,rgba(4,18,9,.2),rgba(4,18,9,.85));backdrop-filter:blur(6px);border-bottom:1px solid #133326}
+    .logo{font-weight:900;letter-spacing:.8px}
+    .scan{font-family:"Share Tech Mono",monospace;color:var(--muted);font-size:12px}
+
+    .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;padding:18px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid #163e30;border-radius:20px;box-shadow:var(--shadow)}
+
+    /* Gallery */
+    .media{padding:14px}
+    .gallery{display:grid;grid-template-columns:1fr;gap:12px}
+    .thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:8px}
+    .thumbs img{border-radius:12px;opacity:.9;border:1px solid #1a3e32;cursor:pointer;aspect-ratio:1/1;object-fit:cover}
+    .thumbs img.active{outline:2px solid var(--accent);opacity:1}
+
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid #1a3e32;border-radius:999px;background:rgba(1,35,25,.6);font-size:12px;color:var(--muted)}
+    .tagline{font-weight:800;font-size:40px;line-height:1.05;margin:8px 0 12px}
+    .sub{color:#b1ffe2;font-size:15px;opacity:.95}
+
+    .priceRow{display:flex;align-items:end;gap:14px;margin:18px 0}
+    .price{font-size:40px;font-weight:900;color:var(--brand)}
+    .mrp{color:#7bcfae;text-decoration:line-through}
+    .save{color:#2be6b8;font-weight:800;font-size:14px}
+
+    /* 3‑minute countdown */
+    .timer{display:flex;gap:10px;margin:14px 0}
+    .pill{padding:10px 12px;border-radius:12px;border:1px solid #184233;background:rgba(1,35,25,.7);font-weight:800;min-width:58px;text-align:center}
+
+    /* Hacker buttons */
+    .ctaWrap{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{position:relative;isolation:isolate;padding:14px 18px;border-radius:14px;border:1px solid #1a3e32;font-weight:900;cursor:pointer;overflow:hidden;letter-spacing:.3px}
+    .btn .scanline{position:absolute;inset:0;transform:translateY(-100%);background:linear-gradient(180deg,transparent,rgba(0,255,213,.15),transparent);animation:scan 2.2s linear infinite}
+    @keyframes scan{0%{transform:translateY(-100%)}100%{transform:translateY(100%)}}
+    .btn.matrix::before{content:"";position:absolute;inset:-2px;background:repeating-linear-gradient(90deg,rgba(24,255,146,.2) 0 2px,transparent 2px 4px);filter:blur(8px);opacity:.25}
+    .btn.buy{background:linear-gradient(90deg,#18ff92,#00ffd5);color:#03281e;text-shadow:0 1px 0 rgba(255,255,255,.25)}
+    .btn.order{background:transparent;color:var(--text)}
+    .btn.order:hover{box-shadow:0 0 0 2px #18ff9266 inset}
+
+    .trust{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;color:#b1ffe2;font-size:13px}
+    .trust span{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border:1px dashed #1a3e32;border-radius:999px}
+
+    .section{margin:44px 0}
+    .section h2{font-size:28px;margin:0 0 12px}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
+    .feature{padding:18px;border-radius:18px;border:1px solid #1a3e32;background:linear-gradient(180deg,rgba(0,255,213,.06),transparent)}
+    .feature h3{margin:8px 0}
+
+    .specs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .table{padding:16px;border-radius:16px;border:1px solid #1a3e32;background:#06130f}
+    .table dl{display:grid;grid-template-columns:1fr 1fr;margin:0}
+    .table dt,.table dd{padding:10px;border-bottom:1px solid #153428}
+    .table dt{color:#7bcfae}
+
+    /* Reviews carousel */
+    .reviewsWrap{overflow:auto;scroll-snap-type:x mandatory}
+    .reviews{display:flex;gap:14px;min-width:100%}
+    .review{scroll-snap-align:center;min-width:280px;max-width:320px;padding:16px;border-radius:16px;border:1px solid #1a3e32;background:linear-gradient(180deg,rgba(24,255,146,.08),transparent)}
+    .stars{letter-spacing:2px}
+
+    /* Checkout / form */
+    .checkout{padding:20px}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{font-size:12px;color:#7bcfae}
+    input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #1a3e32;background:#03100c;color:var(--text)}
+    textarea{min-height:90px}
+    .full{grid-column:1/-1}
+
+    /* Success overlay with truck animation */
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:100}
+    .modal{width:min(760px,92%);border:1px solid #1a3e32;border-radius:18px;background:#04130e;padding:20px;text-align:center}
+    .road{position:relative;height:120px;background:linear-gradient(180deg,#06251b,#03150f);border-radius:14px;border:1px solid #1a3e32;overflow:hidden;margin-top:10px}
+    .box{position:absolute;left:10%;bottom:40px;width:70px;height:50px;background:#18ff92;border:2px solid #0a3;box-shadow:0 8px 18px rgba(24,255,146,.35);animation:pack 1s ease-in forwards}
+    @keyframes pack{0%{transform:scale(.6) translateY(40px);opacity:.2}100%{transform:scale(1) translateY(0);opacity:1}}
+    .truck{position:absolute;left:-140px;bottom:18px;width:120px;height:54px;background:#00ffd5;border:2px solid #0aa;border-radius:8px;animation:drive 3s 1.1s linear forwards}
+    .truck:before{content:"";position:absolute;left:6px;top:-18px;width:70px;height:32px;background:#00cdb0;border:2px solid #099;border-bottom:none;border-radius:6px 6px 0 0}
+    .wheel,.wheel:before{content:"";position:absolute;bottom:-12px;width:24px;height:24px;background:#04130e;border:3px solid #0aa;border-radius:50%;animation:spin 1.2s linear infinite}
+    .wheel{left:12px}
+    .wheel:before{left:74px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes drive{to{left:110%}}
+
+    .footerCta{position:sticky;bottom:10px;display:flex;gap:10px;justify-content:center}
+    .floating{position:fixed;right:18px;bottom:18px}
+    .wChip{background:#25D366;border:none;color:#052b14;padding:12px 14px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .specs{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+      .thumbs{grid-template-columns:repeat(3,1fr)}
+    }
+  </style>
+
+  <!-- JSON-LD Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "HackerX Backpack",
+    "image": [
+      "https://i.postimg.cc/qMS7yQdB/hk1.jpg",
+      "https://i.postimg.cc/xCfjn4L5/hk2.jpg",
+      "https://i.postimg.cc/gkXzzRLC/hk3.jpg",
+      "https://i.postimg.cc/gJ2pf6PB/hk-4.jpg",
+      "https://i.postimg.cc/NGVtzMCp/hk-5.jpg",
+      "https://i.postimg.cc/g2bWG7Wh/hk-6.jpg"
+    ],
+    "description": "Backpack with faux-leather hacker front and 2 hidden pockets. Limited-time ₹599 (MRP ₹999).",
+    "sku": "HX-TG-001",
+    "brand": {"@type":"Brand","name":"HackerX"},
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "599",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {"@type": "AggregateRating","ratingValue":"4.6","reviewCount":"318"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:10px 20px">
+      <div class="logo">HackerX™</div>
+      <div class="scan">// free COD · fast shipping · 7‑day return</div>
+    </div>
+  </header>
+
+  <div class="container hero">
+    <div class="card media">
+      <div class="gallery">
+        <img id="mainImg" src="https://i.postimg.cc/qMS7yQdB/hk1.jpg" alt="HackerX Backpack" style="border-radius:16px;border:1px solid #1a3e32">
+        <div class="thumbs">
+          <img class="active" onclick="setMain(this.src,this)" src="https://i.postimg.cc/qMS7yQdB/hk1.jpg" alt="Image 1">
+          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/xCfjn4L5/hk2.jpg" alt="Image 2">
+          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/gkXzzRLC/hk3.jpg" alt="Image 3">
+          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/gJ2pf6PB/hk-4.jpg" alt="Image 4">
+          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/NGVtzMCp/hk-5.jpg" alt="Image 5">
+          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/g2bWG7Wh/hk-6.jpg" alt="Image 6">
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="badge">New • Hacker Edition</span>
+      <h1 class="tagline">HackerX™ Backpack with <span style="font-family:'Share Tech Mono',monospace">2 Hidden Pockets</span></h1>
+      <p class="sub">Rugged looks, faux‑leather front, hacker circuit vibe, and stealth storage for your valuables. Built for college, commute, and daily carry. <em>Offer ends when timer hits 00:00.</em></p>
+      <div class="priceRow">
+        <div class="price">₹599</div>
+        <div class="mrp">₹999</div>
+        <div class="save">Save ₹400 today</div>
+      </div>
+      <div class="timer">
+        <div class="pill"><div id="tM">03</div><small>MIN</small></div>
+        <div class="pill"><div id="tS">00</div><small>SEC</small></div>
+      </div>
+      <div class="ctaWrap">
+        <a href="#order" class="btn buy matrix" id="buyBtn">
+          <span class="scanline"></span>BUY NOW ▷
+        </a>
+        <a href="#order" class="btn order matrix" id="orderBtn">
+          <span class="scanline"></span>ORDER NOW (COD)
+        </a>
+      </div>
+      <div class="trust">
+        <span>⚡ Same‑day processing</span>
+        <span>🛡️ Secure checkout</span>
+        <span>🚚 Delivery 2‑5 days</span>
+        <span>↩️ 7‑day easy return</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="features">
+    <h2>Why students & commuters love <span style="font-family:'Share Tech Mono',monospace">HackerX</span></h2>
+    <div class="grid-3">
+      <div class="feature">
+        <h3>2 Hidden Pockets</h3>
+        <p>Keep phone, keys, or cash <strong>safe & discreet</strong> with cleverly concealed pockets.</p>
+      </div>
+      <div class="feature">
+        <h3>Premium Front</h3>
+        <p><strong>Faux‑leather</strong> panel with hacker circuit print for a standout look.</p>
+      </div>
+      <div class="feature">
+        <h3>Built To Last</h3>
+        <p>Sturdy stitching, smooth zippers, and tough fabric built for everyday use.</p>
+      </div>
+    </div>
+
+    <div class="specs">
+      <div class="table">
+        <h3>Specs</h3>
+        <dl>
+          <dt>Capacity</dt><dd>24–28L (daily carry)</dd>
+          <dt>Material</dt><dd>Polyester + faux leather front</dd>
+          <dt>Compartments</dt><dd>Main + laptop sleeve + 2 hidden pockets</dd>
+          <dt>Fits Laptop</dt><dd>Up to 15.6"</dd>
+          <dt>Color</dt><dd>Black (Hacker edition)</dd>
+          <dt>Weight</dt><dd>~620g</dd>
+        </dl>
+      </div>
+      <div class="table">
+        <h3>What’s in the box</h3>
+        <dl>
+          <dt>HackerX Backpack</dt><dd>1 unit</dd>
+          <dt>Warranty</dt><dd>3‑month manufacturing warranty</dd>
+          <dt>Returns</dt><dd>7‑day easy return / replacement</dd>
+          <dt>Support</dt><dd>WhatsApp + Phone support</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <h2>Real Reviews (4★–5★)</h2>
+    <div class="reviewsWrap">
+      <div class="reviews">
+        <div class="review"><div class="stars">★★★★★</div><p>Hidden pockets are genius. Metro me phone safe! Looks premium too.</p><small>— Aayush K.</small></div>
+        <div class="review"><div class="stars">★★★★☆</div><p>College use ke liye best. Price sahi, compartments kaafi. Delivery fast.</p><small>— Sana M.</small></div>
+        <div class="review"><div class="stars">★★★★★</div><p>Faux leather front gives rich look. Laptop fit ho gaya, daily carry ✅</p><small>— Rohan P.</small></div>
+        <div class="review"><div class="stars">★★★★☆</div><p>Zippers smooth, stitching solid. Is price par to steal hai.</p><small>— Mehul S.</small></div>
+        <div class="review"><div class="stars">★★★★★</div><p>Gifted to brother. He loved the hacker design! Worth it.</p><small>— Faria T.</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section card checkout" id="order">
+    <h2>Order Details (COD available)</h2>
+    <p class="sub">Fill the form to place your order. We’ll confirm on WhatsApp/SMS.</p>
+    <form id="orderForm">
+      <div>
+        <label>Full Name</label>
+        <input required name="name" placeholder="Your name" />
+      </div>
+      <div>
+        <label>Phone (WhatsApp)</label>
+        <input required name="phone" placeholder="9xxxxxxxxx" pattern="[0-9]{10}" />
+      </div>
+      <div class="full">
+        <label>Full Address</label>
+        <textarea required name="address" placeholder="House no, Street, Area"></textarea>
+      </div>
+      <div>
+        <label>City</label>
+        <input required name="city" placeholder="City" />
+      </div>
+      <div>
+        <label>State</label>
+        <input required name="state" placeholder="State" />
+      </div>
+      <div>
+        <label>Pincode</label>
+        <input required name="pincode" placeholder="6-digit" pattern="[0-9]{6}" />
+      </div>
+      <div>
+        <label>Quantity</label>
+        <select name="qty">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div>
+        <label>Payment</label>
+        <select name="pay"><option>Cash on Delivery</option><option>Online (UPI/Card)</option></select>
+      </div>
+      <div class="full">
+        <label>Landmark (optional)</label>
+        <input name="landmark" placeholder="Near ..." />
+      </div>
+      <div class="full" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+        <button class="btn buy matrix" type="submit"><span class="scanline"></span>PLACE ORDER ▷</button>
+        <a class="btn order matrix" href="#" id="waQuick"><span class="scanline"></span>Order on WhatsApp</a>
+      </div>
+      <small style="color:#7bcfae">By ordering you agree to our returns & shipping policy.</small>
+    </form>
+  </div>
+
+  <footer class="container" style="padding-bottom:60px">
+    <div style="height:1px;background:linear-gradient(90deg,transparent,#1a3e32,transparent);margin:24px 0"></div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <div style="opacity:.9">© <span id="yr"></span> HackerX. All rights reserved. MRP ₹999 • Today ₹599</div>
+      <div style="display:flex;gap:12px">
+        <a class="badge" href="#features">Features</a>
+        <a class="badge" href="#order">Order</a>
+        <a class="badge" href="https://wa.me/919743140915" target="_blank" rel="noopener">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footerCta">
+    <a class="wChip" href="#order">Get it @ ₹599 →</a>
+  </div>
+
+  <!-- Success / Animation Overlay -->
+  <div class="overlay" id="successOverlay">
+    <div class="modal">
+      <h2>Packaging your order…</h2>
+      <p class="sub">Hang tight while we seal the box and dispatch 🚚</p>
+      <div class="road">
+        <div class="box"></div>
+        <div class="truck">
+          <div class="wheel"></div>
+        </div>
+      </div>
+      <div id="thanks" style="display:none;margin-top:16px">
+        <h2>Thank you! Order received ✅</h2>
+        <p class="sub">Tap below to send order details on WhatsApp so our team can confirm quickly.</p>
+        <a id="finalWA" class="btn buy matrix" href="#" target="_blank" rel="noopener"><span class="scanline"></span>SEND DETAILS ON WHATSAPP</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating wChip" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'});">Buy @ ₹599</button>
+
+  <script>
+    // Simple image gallery
+    function setMain(src, el){
+      document.getElementById('mainImg').src = src;
+      document.querySelectorAll('.thumbs img').forEach(i=>i.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    // 3‑minute countdown
+    let countdown = 3*60; // seconds
+    const tM = document.getElementById('tM');
+    const tS = document.getElementById('tS');
+    function tick(){
+      const m = Math.floor(countdown/60);
+      const s = countdown%60;
+      tM.textContent = String(m).padStart(2,'0');
+      tS.textContent = String(s).padStart(2,'0');
+      if(countdown>0){countdown--;}
+    }
+    tick(); setInterval(tick,1000);
+
+    // Scroll to form buttons
+    document.getElementById('buyBtn').addEventListener('click',()=>document.getElementById('order').scrollIntoView({behavior:'smooth'}));
+    document.getElementById('orderBtn').addEventListener('click',()=>document.getElementById('order').scrollIntoView({behavior:'smooth'}));
+
+    // Build WhatsApp message from form
+    function buildMessage(data){
+      const lines = [
+        "New Order: HackerX Backpack",
+        "Offer Price: ₹599 (MRP ₹999)",
+        `Qty: ${data.qty}`,
+        `Payment: ${data.pay}`,
+        `Name: ${data.name}`,
+        `Phone: ${data.phone}`,
+        `Address: ${data.address}`,
+        `City: ${data.city}`,
+        `State: ${data.state}`,
+        `Pincode: ${data.pincode}`,
+        data.landmark?`Landmark: ${data.landmark}`:null,
+      ].filter(Boolean).join("
+");
+      return encodeURIComponent(lines);
+    }
+
+    // Quick WA from blank form
+    document.getElementById('waQuick').addEventListener('click', (e)=>{
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(document.getElementById('orderForm')).entries());
+      const url = `https://wa.me/919743140915?text=${buildMessage(data)}`;
+      window.open(url,'_blank');
+    });
+
+    // Submit -> show animation -> then final WhatsApp CTA with all data
+    const overlay = document.getElementById('successOverlay');
+    const thanks = document.getElementById('thanks');
+    const finalWA = document.getElementById('finalWA');
+
+    document.getElementById('orderForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const form = e.currentTarget;
+      if(!form.reportValidity()) return;
+      const data = Object.fromEntries(new FormData(form).entries());
+      const wa = `https://wa.me/919743140915?text=${buildMessage(data)}`;
+      finalWA.href = wa;
+      overlay.style.display = 'flex';
+      thanks.style.display = 'none';
+      // After truck drives (about 4s incl delay), show thanks
+      setTimeout(()=>{ thanks.style.display = 'block'; }, 4100);
+    });
+
+    // Year stamp
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Meta Pixel (placeholder). Replace with your own pixel ID.) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n; n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>
