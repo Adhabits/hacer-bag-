@@ -4,115 +4,123 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HackerX™ Backpack – Hidden Pockets | ₹599 Today (MRP ₹999)</title>
-  <meta name="description" content="HackerX Backpack with 2 hidden pockets, faux‑leather hacker design. Limited-time offer ₹599 (MRP ₹999). Free COD, fast shipping, secure checkout." />
-  <meta name="theme-color" content="#041209" />
+  <meta name="description" content="HackerX Backpack with 2 hidden pockets. Black & white hacker theme. Limited-time price ₹599 (MRP ₹999). Free COD, fast shipping, secure checkout." />
+  <meta name="theme-color" content="#0b0b0b" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#050b0a;--panel:#0a1612;--line:#0f261e;--text:#e6fff4;--muted:#8de4c3;--brand:#18ff92;--accent:#00ffd5;--danger:#ff3b3b;--shadow:0 12px 32px rgba(0,0,0,.5);
+      --bg:#0b0b0b;--panel:#121212;--line:#1e1e1e;--text:#f1f1f1;--muted:#c7c7c7;--accent:#ffffff;--accent2:#d4d4d4;--shadow:0 12px 32px rgba(0,0,0,.55);
     }
     *{box-sizing:border-box}
-    body{margin:0;background:
-      radial-gradient(1000px 500px at 15% -10%,rgba(0,255,213,.06),transparent),
-      radial-gradient(800px 400px at 90% 0,rgba(24,255,146,.06),transparent),
-      var(--bg);
-      color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    html,body{margin:0;background:radial-gradient(1000px 500px at 15% -10%,rgba(255,255,255,.06),transparent),radial-gradient(800px 400px at 90% 0,rgba(255,255,255,.045),transparent),var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .container{max-width:1100px;margin:0 auto;padding:20px}
 
-    /* Hacker header */
-    header{position:sticky;top:0;z-index:40;background:linear-gradient(0deg,rgba(4,18,9,.2),rgba(4,18,9,.85));backdrop-filter:blur(6px);border-bottom:1px solid #133326}
+    /* Header */
+    header{position:sticky;top:0;z-index:40;background:linear-gradient(0deg,rgba(11,11,11,.2),rgba(11,11,11,.85));backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
     .logo{font-weight:900;letter-spacing:.8px}
     .scan{font-family:"Share Tech Mono",monospace;color:var(--muted);font-size:12px}
 
+    /* Hero */
     .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;padding:18px 0}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid #163e30;border-radius:20px;box-shadow:var(--shadow)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
 
     /* Gallery */
     .media{padding:14px}
     .gallery{display:grid;grid-template-columns:1fr;gap:12px}
     .thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:8px}
-    .thumbs img{border-radius:12px;opacity:.9;border:1px solid #1a3e32;cursor:pointer;aspect-ratio:1/1;object-fit:cover}
+    .thumbs img{border-radius:12px;opacity:.95;border:1px solid var(--line);cursor:pointer;aspect-ratio:1/1;object-fit:cover;filter:grayscale(100%)}
     .thumbs img.active{outline:2px solid var(--accent);opacity:1}
 
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid #1a3e32;border-radius:999px;background:rgba(1,35,25,.6);font-size:12px;color:var(--muted)}
-    .tagline{font-weight:800;font-size:40px;line-height:1.05;margin:8px 0 12px}
-    .sub{color:#b1ffe2;font-size:15px;opacity:.95}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);font-size:12px;color:var(--muted)}
+    .tagline{font-weight:900;font-size:40px;line-height:1.05;margin:8px 0 12px}
+    .sub{color:var(--muted);font-size:15px}
 
     .priceRow{display:flex;align-items:end;gap:14px;margin:18px 0}
-    .price{font-size:40px;font-weight:900;color:var(--brand)}
-    .mrp{color:#7bcfae;text-decoration:line-through}
-    .save{color:#2be6b8;font-weight:800;font-size:14px}
+    .price{font-size:40px;font-weight:900;color:var(--accent)}
+    .mrp{color:#bdbdbd;text-decoration:line-through}
+    .save{color:#e5e5e5;font-weight:800;font-size:14px}
 
     /* 3‑minute countdown */
     .timer{display:flex;gap:10px;margin:14px 0}
-    .pill{padding:10px 12px;border-radius:12px;border:1px solid #184233;background:rgba(1,35,25,.7);font-weight:800;min-width:58px;text-align:center}
+    .pill{padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-weight:900;min-width:58px;text-align:center}
 
-    /* Hacker buttons */
+    /* Buttons */
     .ctaWrap{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{position:relative;isolation:isolate;padding:14px 18px;border-radius:14px;border:1px solid #1a3e32;font-weight:900;cursor:pointer;overflow:hidden;letter-spacing:.3px}
-    .btn .scanline{position:absolute;inset:0;transform:translateY(-100%);background:linear-gradient(180deg,transparent,rgba(0,255,213,.15),transparent);animation:scan 2.2s linear infinite}
+    .btn{position:relative;isolation:isolate;padding:14px 18px;border-radius:14px;border:1px solid var(--line);font-weight:900;cursor:pointer;overflow:hidden;letter-spacing:.3px;background:#161616;color:var(--text)}
+    .btn .scanline{position:absolute;inset:0;transform:translateY(-100%);background:linear-gradient(180deg,transparent,rgba(255,255,255,.18),transparent);animation:scan 2.2s linear infinite}
     @keyframes scan{0%{transform:translateY(-100%)}100%{transform:translateY(100%)}}
-    .btn.matrix::before{content:"";position:absolute;inset:-2px;background:repeating-linear-gradient(90deg,rgba(24,255,146,.2) 0 2px,transparent 2px 4px);filter:blur(8px);opacity:.25}
-    .btn.buy{background:linear-gradient(90deg,#18ff92,#00ffd5);color:#03281e;text-shadow:0 1px 0 rgba(255,255,255,.25)}
-    .btn.order{background:transparent;color:var(--text)}
-    .btn.order:hover{box-shadow:0 0 0 2px #18ff9266 inset}
+    .btn.matrix::before{content:"";position:absolute;inset:-2px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 2px,transparent 2px 4px);filter:blur(8px);opacity:.25}
+    .btn.buy{background:linear-gradient(90deg,#fff,#d9d9d9);color:#111;text-shadow:0 1px 0 rgba(255,255,255,.35)}
+    .btn.order{background:#0f0f0f;color:var(--text)}
+    .btn.order:hover{box-shadow:0 0 0 2px #ffffff33 inset}
 
-    .trust{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;color:#b1ffe2;font-size:13px}
-    .trust span{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border:1px dashed #1a3e32;border-radius:999px}
+    .trust{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;color:var(--muted);font-size:13px}
+    .trust span{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border:1px dashed var(--line);border-radius:999px}
 
     .section{margin:44px 0}
     .section h2{font-size:28px;margin:0 0 12px}
 
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
-    .feature{padding:18px;border-radius:18px;border:1px solid #1a3e32;background:linear-gradient(180deg,rgba(0,255,213,.06),transparent)}
+    .feature{padding:18px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.06),transparent)}
     .feature h3{margin:8px 0}
 
     .specs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .table{padding:16px;border-radius:16px;border:1px solid #1a3e32;background:#06130f}
+    .table{padding:16px;border-radius:16px;border:1px solid var(--line);background:#0f0f0f}
     .table dl{display:grid;grid-template-columns:1fr 1fr;margin:0}
-    .table dt,.table dd{padding:10px;border-bottom:1px solid #153428}
-    .table dt{color:#7bcfae}
+    .table dt,.table dd{padding:10px;border-bottom:1px solid var(--line)}
+    .table dt{color:#bdbdbd}
 
     /* Reviews carousel */
     .reviewsWrap{overflow:auto;scroll-snap-type:x mandatory}
     .reviews{display:flex;gap:14px;min-width:100%}
-    .review{scroll-snap-align:center;min-width:280px;max-width:320px;padding:16px;border-radius:16px;border:1px solid #1a3e32;background:linear-gradient(180deg,rgba(24,255,146,.08),transparent)}
-    .stars{letter-spacing:2px}
+    .review{scroll-snap-align:center;min-width:280px;max-width:320px;padding:16px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.06),transparent)}
+    .stars{letter-spacing:2px;color:#fff}
 
     /* Checkout / form */
     .checkout{padding:20px}
     form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    label{font-size:12px;color:#7bcfae}
-    input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #1a3e32;background:#03100c;color:var(--text)}
+    label{font-size:12px;color:#bdbdbd}
+    input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0f0f0f;color:var(--text)}
     textarea{min-height:90px}
     .full{grid-column:1/-1}
 
-    /* Success overlay with truck animation */
-    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:100}
-    .modal{width:min(760px,92%);border:1px solid #1a3e32;border-radius:18px;background:#04130e;padding:20px;text-align:center}
-    .road{position:relative;height:120px;background:linear-gradient(180deg,#06251b,#03150f);border-radius:14px;border:1px solid #1a3e32;overflow:hidden;margin-top:10px}
-    .box{position:absolute;left:10%;bottom:40px;width:70px;height:50px;background:#18ff92;border:2px solid #0a3;box-shadow:0 8px 18px rgba(24,255,146,.35);animation:pack 1s ease-in forwards}
+    /* Success overlay with truck animation (B/W) */
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;z-index:100}
+    .modal{width:min(760px,92%);border:1px solid var(--line);border-radius:18px;background:#0f0f0f;padding:20px;text-align:center}
+    .road{position:relative;height:120px;background:linear-gradient(180deg,#121212,#0b0b0b);border-radius:14px;border:1px solid var(--line);overflow:hidden;margin-top:10px}
+    .box{position:absolute;left:10%;bottom:40px;width:70px;height:50px;background:#fff;border:2px solid #cfcfcf;box-shadow:0 8px 18px rgba(255,255,255,.15);animation:pack 1s ease-in forwards}
     @keyframes pack{0%{transform:scale(.6) translateY(40px);opacity:.2}100%{transform:scale(1) translateY(0);opacity:1}}
-    .truck{position:absolute;left:-140px;bottom:18px;width:120px;height:54px;background:#00ffd5;border:2px solid #0aa;border-radius:8px;animation:drive 3s 1.1s linear forwards}
-    .truck:before{content:"";position:absolute;left:6px;top:-18px;width:70px;height:32px;background:#00cdb0;border:2px solid #099;border-bottom:none;border-radius:6px 6px 0 0}
-    .wheel,.wheel:before{content:"";position:absolute;bottom:-12px;width:24px;height:24px;background:#04130e;border:3px solid #0aa;border-radius:50%;animation:spin 1.2s linear infinite}
+    .truck{position:absolute;left:-140px;bottom:18px;width:120px;height:54px;background:#dcdcdc;border:2px solid #b7b7b7;border-radius:8px;animation:drive 3s 1.1s linear forwards}
+    .truck:before{content:"";position:absolute;left:6px;top:-18px;width:70px;height:32px;background:#bdbdbd;border:2px solid #a6a6a6;border-bottom:none;border-radius:6px 6px 0 0}
+    .wheel,.wheel:before{content:"";position:absolute;bottom:-12px;width:24px;height:24px;background:#0f0f0f;border:3px solid #b7b7b7;border-radius:50%;animation:spin 1.2s linear infinite}
     .wheel{left:12px}
     .wheel:before{left:74px}
     @keyframes spin{to{transform:rotate(360deg)}}
     @keyframes drive{to{left:110%}}
 
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:120}
+    .lb-inner{position:relative;width:100%;height:100%}
+    .lb-imgwrap{position:absolute;inset:60px 16px 100px 16px;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#0b0b0b}
+    #lbImg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(1);transform-origin:center center;touch-action:none;user-select:none;filter:grayscale(100%)}
+    .lb-ui{position:absolute;left:0;right:0;bottom:20px;display:flex;gap:10px;justify-content:center}
+    .lb-btn{background:#121212;border:1px solid var(--line);color:var(--text);padding:12px 14px;border-radius:12px;font-weight:800}
+    .lb-top{position:absolute;left:0;right:0;top:12px;display:flex;justify-content:space-between;align-items:center;padding:0 16px;color:#eaeaea;font-family:'Share Tech Mono',monospace}
+    .lb-count{opacity:.8}
+
     .footerCta{position:sticky;bottom:10px;display:flex;gap:10px;justify-content:center}
     .floating{position:fixed;right:18px;bottom:18px}
-    .wChip{background:#25D366;border:none;color:#052b14;padding:12px 14px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
+    .wChip{background:#1a1a1a;border:1px solid var(--line);color:#f5f5f5;padding:12px 14px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
 
     @media (max-width:980px){
       .hero{grid-template-columns:1fr}
       .specs{grid-template-columns:1fr}
       form{grid-template-columns:1fr}
       .thumbs{grid-template-columns:repeat(3,1fr)}
+      .lb-imgwrap{inset:56px 8px 96px 8px}
     }
   </style>
 
@@ -130,15 +138,10 @@
       "https://i.postimg.cc/NGVtzMCp/hk-5.jpg",
       "https://i.postimg.cc/g2bWG7Wh/hk-6.jpg"
     ],
-    "description": "Backpack with faux-leather hacker front and 2 hidden pockets. Limited-time ₹599 (MRP ₹999).",
-    "sku": "HX-TG-001",
+    "description": "Black & white hacker theme backpack with faux-leather front and 2 hidden pockets. Limited-time ₹599 (MRP ₹999).",
+    "sku": "HX-BW-001",
     "brand": {"@type":"Brand","name":"HackerX"},
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "INR",
-      "price": "599",
-      "availability": "https://schema.org/InStock"
-    },
+    "offers": {"@type": "Offer","priceCurrency": "INR","price": "599","availability": "https://schema.org/InStock"},
     "aggregateRating": {"@type": "AggregateRating","ratingValue":"4.6","reviewCount":"318"}
   }
   </script>
@@ -154,21 +157,21 @@
   <div class="container hero">
     <div class="card media">
       <div class="gallery">
-        <img id="mainImg" src="https://i.postimg.cc/qMS7yQdB/hk1.jpg" alt="HackerX Backpack" style="border-radius:16px;border:1px solid #1a3e32">
+        <img id="mainImg" src="https://i.postimg.cc/qMS7yQdB/hk1.jpg" alt="HackerX Backpack" style="border-radius:16px;border:1px solid var(--line);filter:grayscale(100%);cursor:zoom-in">
         <div class="thumbs">
-          <img class="active" onclick="setMain(this.src,this)" src="https://i.postimg.cc/qMS7yQdB/hk1.jpg" alt="Image 1">
-          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/xCfjn4L5/hk2.jpg" alt="Image 2">
-          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/gkXzzRLC/hk3.jpg" alt="Image 3">
-          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/gJ2pf6PB/hk-4.jpg" alt="Image 4">
-          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/NGVtzMCp/hk-5.jpg" alt="Image 5">
-          <img onclick="setMain(this.src,this)" src="https://i.postimg.cc/g2bWG7Wh/hk-6.jpg" alt="Image 6">
+          <img class="active" onclick="setMain(this.src,this,true)" src="https://i.postimg.cc/qMS7yQdB/hk1.jpg" alt="Image 1">
+          <img onclick="setMain(this.src,this,true)" src="https://i.postimg.cc/xCfjn4L5/hk2.jpg" alt="Image 2">
+          <img onclick="setMain(this.src,this,true)" src="https://i.postimg.cc/gkXzzRLC/hk3.jpg" alt="Image 3">
+          <img onclick="setMain(this.src,this,true)" src="https://i.postimg.cc/gJ2pf6PB/hk-4.jpg" alt="Image 4">
+          <img onclick="setMain(this.src,this,true)" src="https://i.postimg.cc/NGVtzMCp/hk-5.jpg" alt="Image 5">
+          <img onclick="setMain(this.src,this,true)" src="https://i.postimg.cc/g2bWG7Wh/hk-6.jpg" alt="Image 6">
         </div>
       </div>
     </div>
     <div>
-      <span class="badge">New • Hacker Edition</span>
+      <span class="badge">New • Hacker Edition (B/W)</span>
       <h1 class="tagline">HackerX™ Backpack with <span style="font-family:'Share Tech Mono',monospace">2 Hidden Pockets</span></h1>
-      <p class="sub">Rugged looks, faux‑leather front, hacker circuit vibe, and stealth storage for your valuables. Built for college, commute, and daily carry. <em>Offer ends when timer hits 00:00.</em></p>
+      <p class="sub">Rugged looks, faux‑leather front, hacker vibe, and stealth storage for your valuables. Built for college, commute, and daily carry. <em>Offer ends when timer hits 00:00.</em></p>
       <div class="priceRow">
         <div class="price">₹599</div>
         <div class="mrp">₹999</div>
@@ -196,19 +199,19 @@
   </div>
 
   <div class="container section" id="features">
-    <h2>Why students & commuters love <span style="font-family:'Share Tech Mono',monospace">HackerX</span></h2>
+    <h2>Why students & commuters choose <span style="font-family:'Share Tech Mono',monospace">HackerX</span></h2>
     <div class="grid-3">
       <div class="feature">
         <h3>2 Hidden Pockets</h3>
-        <p>Keep phone, keys, or cash <strong>safe & discreet</strong> with cleverly concealed pockets.</p>
+        <p>Phone, keys, cash stay <strong>safe & discreet</strong> with concealed pockets.</p>
       </div>
       <div class="feature">
         <h3>Premium Front</h3>
-        <p><strong>Faux‑leather</strong> panel with hacker circuit print for a standout look.</p>
+        <p><strong>Faux‑leather</strong> panel with hacker circuit print — bold & minimal.</p>
       </div>
       <div class="feature">
         <h3>Built To Last</h3>
-        <p>Sturdy stitching, smooth zippers, and tough fabric built for everyday use.</p>
+        <p>Sturdy stitching, smooth zippers, tough fabric for daily use.</p>
       </div>
     </div>
 
@@ -287,8 +290,7 @@
       </div>
       <div>
         <label>Payment</label>
-        <select name="pay"><option>Cash on Delivery</option><option>Online (UPI/Card)</option></select>
-      </div>
+        <select name="pay"><option>Cash on Delivery</option><option>Online (UPI/Card)</option></select></div>
       <div class="full">
         <label>Landmark (optional)</label>
         <input name="landmark" placeholder="Near ..." />
@@ -297,12 +299,12 @@
         <button class="btn buy matrix" type="submit"><span class="scanline"></span>PLACE ORDER ▷</button>
         <a class="btn order matrix" href="#" id="waQuick"><span class="scanline"></span>Order on WhatsApp</a>
       </div>
-      <small style="color:#7bcfae">By ordering you agree to our returns & shipping policy.</small>
+      <small style="color:#bdbdbd">By ordering you agree to our returns & shipping policy.</small>
     </form>
   </div>
 
   <footer class="container" style="padding-bottom:60px">
-    <div style="height:1px;background:linear-gradient(90deg,transparent,#1a3e32,transparent);margin:24px 0"></div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:24px 0"></div>
     <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between">
       <div style="opacity:.9">© <span id="yr"></span> HackerX. All rights reserved. MRP ₹999 • Today ₹599</div>
       <div style="display:flex;gap:12px">
@@ -321,7 +323,7 @@
   <div class="overlay" id="successOverlay">
     <div class="modal">
       <h2>Packaging your order…</h2>
-      <p class="sub">Hang tight while we seal the box and dispatch 🚚</p>
+      <p class="sub">Box seal ho raha hai — dispatch jaldi hoga 🚚</p>
       <div class="road">
         <div class="box"></div>
         <div class="truck">
@@ -336,17 +338,30 @@
     </div>
   </div>
 
+  <!-- Lightbox (Zoom/Pan/Swipe) -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-inner">
+      <div class="lb-top">
+        <button class="lb-btn" id="lbClose">✕ CLOSE</button>
+        <div class="lb-count" id="lbCount">1 / 6</div>
+      </div>
+      <div class="lb-imgwrap" id="lbWrap">
+        <img id="lbImg" src="" alt="Preview" draggable="false" />
+      </div>
+      <div class="lb-ui">
+        <button class="lb-btn" id="lbPrev">◀ PREV</button>
+        <button class="lb-btn" id="lbZoomOut">− ZOOM</button>
+        <button class="lb-btn" id="lbZoomIn">＋ ZOOM</button>
+        <button class="lb-btn" id="lbReset">RESET</button>
+        <button class="lb-btn" id="lbNext">NEXT ▶</button>
+      </div>
+    </div>
+  </div>
+
   <button class="floating wChip" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'});">Buy @ ₹599</button>
 
   <script>
-    // Simple image gallery
-    function setMain(src, el){
-      document.getElementById('mainImg').src = src;
-      document.querySelectorAll('.thumbs img').forEach(i=>i.classList.remove('active'));
-      el.classList.add('active');
-    }
-
-    // 3‑minute countdown
+    // ---- Timer (3 min, keeps running globally) ----
     let countdown = 3*60; // seconds
     const tM = document.getElementById('tM');
     const tS = document.getElementById('tS');
@@ -355,15 +370,88 @@
       const s = countdown%60;
       tM.textContent = String(m).padStart(2,'0');
       tS.textContent = String(s).padStart(2,'0');
-      if(countdown>0){countdown--;}
+      if(countdown>0){countdown--;} else { // loop to keep urgency
+        countdown = 3*60;
+      }
     }
     tick(); setInterval(tick,1000);
 
-    // Scroll to form buttons
+    // ---- Gallery & Lightbox ----
+    const IMG_LIST = [
+      'https://i.postimg.cc/qMS7yQdB/hk1.jpg',
+      'https://i.postimg.cc/xCfjn4L5/hk2.jpg',
+      'https://i.postimg.cc/gkXzzRLC/hk3.jpg',
+      'https://i.postimg.cc/gJ2pf6PB/hk-4.jpg',
+      'https://i.postimg.cc/NGVtzMCp/hk-5.jpg',
+      'https://i.postimg.cc/g2bWG7Wh/hk-6.jpg'
+    ];
+
+    function setMain(src, el, noOpen){
+      document.getElementById('mainImg').src = src;
+      document.querySelectorAll('.thumbs img').forEach(i=>i.classList.remove('active'));
+      if(el) el.classList.add('active');
+      if(!noOpen) openLightbox(IMG_LIST.indexOf(src));
+    }
+
+    // Clicking main image opens lightbox
+    let currentIndex = 0;
+    document.getElementById('mainImg').addEventListener('click',()=>{
+      openLightbox(currentIndex);
+    });
+
+    // Lightbox state
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbWrap = document.getElementById('lbWrap');
+    const lbCount = document.getElementById('lbCount');
+    let scale=1, tx=0, ty=0, dragging=false, startX=0, startY=0;
+
+    function applyTransform(){ lbImg.style.transform = `translate(calc(-50% + ${tx}px), calc(-50% + ${ty}px)) scale(${scale})`; }
+    function updateCount(){ lbCount.textContent = `${currentIndex+1} / ${IMG_LIST.length}`; }
+
+    function openLightbox(idx=0){
+      currentIndex = (idx<0?0:idx>=IMG_LIST.length?IMG_LIST.length-1:idx);
+      lbImg.src = IMG_LIST[currentIndex];
+      scale=1; tx=ty=0; applyTransform();
+      updateCount();
+      lightbox.style.display='flex';
+    }
+    function closeLightbox(){ lightbox.style.display='none'; }
+
+    // Controls
+    document.getElementById('lbClose').onclick = closeLightbox;
+    document.getElementById('lbPrev').onclick = ()=>{ if(scale===1){ currentIndex = (currentIndex-1+IMG_LIST.length)%IMG_LIST.length; lbImg.src=IMG_LIST[currentIndex]; updateCount(); applyTransform(); }};
+    document.getElementById('lbNext').onclick = ()=>{ if(scale===1){ currentIndex = (currentIndex+1)%IMG_LIST.length; lbImg.src=IMG_LIST[currentIndex]; updateCount(); applyTransform(); }};
+    document.getElementById('lbZoomIn').onclick = ()=>{ scale = Math.min(4, +(scale+0.25).toFixed(2)); applyTransform(); };
+    document.getElementById('lbZoomOut').onclick = ()=>{ scale = Math.max(1, +(scale-0.25).toFixed(2)); if(scale===1){tx=ty=0;} applyTransform(); };
+    document.getElementById('lbReset').onclick = ()=>{ scale=1; tx=ty=0; applyTransform(); };
+
+    // Drag/Pan & Swipe
+    lbWrap.addEventListener('pointerdown', (e)=>{
+      dragging=true; startX=e.clientX; startY=e.clientY; lbWrap.setPointerCapture(e.pointerId);
+    });
+    lbWrap.addEventListener('pointermove', (e)=>{
+      if(!dragging) return;
+      const dx=e.clientX-startX, dy=e.clientY-startY;
+      if(scale>1){ tx+=dx; ty+=dy; applyTransform(); startX=e.clientX; startY=e.clientY; }
+    });
+    lbWrap.addEventListener('pointerup', (e)=>{
+      if(!dragging) return; dragging=false; lbWrap.releasePointerCapture(e.pointerId);
+      const dx=e.clientX-startX; // swipe when not zoomed
+      if(scale===1 && Math.abs(dx)>60){ if(dx<0) document.getElementById('lbNext').click(); else document.getElementById('lbPrev').click(); }
+    });
+
+    // Double click / double tap to zoom
+    let lastTap=0; lbWrap.addEventListener('click',(e)=>{
+      const now=Date.now(); if(now-lastTap<300){ // double
+        scale = scale===1 ? 2 : 1; if(scale===1){tx=ty=0;} applyTransform();
+      } lastTap=now; });
+
+    // ---- CTA scroll ----
     document.getElementById('buyBtn').addEventListener('click',()=>document.getElementById('order').scrollIntoView({behavior:'smooth'}));
     document.getElementById('orderBtn').addEventListener('click',()=>document.getElementById('order').scrollIntoView({behavior:'smooth'}));
 
-    // Build WhatsApp message from form
+    // ---- WhatsApp Message Builder ----
     function buildMessage(data){
       const lines = [
         "New Order: HackerX Backpack",
@@ -377,12 +465,11 @@
         `State: ${data.state}`,
         `Pincode: ${data.pincode}`,
         data.landmark?`Landmark: ${data.landmark}`:null,
-      ].filter(Boolean).join("
-");
+      ].filter(Boolean).join("\n");
       return encodeURIComponent(lines);
     }
 
-    // Quick WA from blank form
+    // Quick WA from partially filled form
     document.getElementById('waQuick').addEventListener('click', (e)=>{
       e.preventDefault();
       const data = Object.fromEntries(new FormData(document.getElementById('orderForm')).entries());
@@ -390,7 +477,7 @@
       window.open(url,'_blank');
     });
 
-    // Submit -> show animation -> then final WhatsApp CTA with all data
+    // Submit -> animation -> WhatsApp with details
     const overlay = document.getElementById('successOverlay');
     const thanks = document.getElementById('thanks');
     const finalWA = document.getElementById('finalWA');
@@ -404,11 +491,10 @@
       finalWA.href = wa;
       overlay.style.display = 'flex';
       thanks.style.display = 'none';
-      // After truck drives (about 4s incl delay), show thanks
       setTimeout(()=>{ thanks.style.display = 'block'; }, 4100);
     });
 
-    // Year stamp
+    // Year
     document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
 
